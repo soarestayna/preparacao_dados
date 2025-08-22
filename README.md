@@ -52,7 +52,17 @@ valores nulos, padronização de formatos e enriquecimento de dados.
 - Documentação do processo de limpeza para reprodutibilidade
 
 
----
+
+## Conteúdo dos Scripts Python
+
+Além dos notebooks interativos, este repositório inclui scripts `.py` que replicam as etapas da preparação de dados de forma automatizada.
+
+Esses scripts são úteis para:
+
+- Executar o pré-processamento em ambientes fora do Jupyter
+- Integrar a preparação de dados em pipelines ou aplicações
+- Reutilizar funções e lógicas de preparação com maior eficiência
+
 
 ## Componentes do Projeto
 
@@ -75,9 +85,28 @@ valores nulos, padronização de formatos e enriquecimento de dados.
 
 ### Como usar este repositório
 
-Cada notebook pode ser executado individualmente em ambiente Jupyter.  
-Os arquivos tratados estão disponíveis ou podem ser gerados com os scripts 
-incluídos.
+Este repositório foi estruturado para facilitar o aprendizado.
+
+Você pode explorá-lo de duas formas:
+
+#### Notebooks
+Os notebooks estão organizados por etapas e podem ser executados individualmente em ambiente Jupyter. 
+Cada um contém explicações detalhadas, células comentadas e exemplos práticos.
+
+#### Scripts Python
+Os scripts `.py` replicam o conteúdo dos notebooks de forma automatizada.
+
+Para executar:
+
+```
+python scripts/1_preparacao_dados.py 
+```
+Os arquivos .csv utilizados e gerados estão na pasta data/, e podem ser reproduzidos conforme o fluxo de tratamento.
+Requisitos
+Antes de executar os scripts, instale as dependências:
+```
+pip install -r requirements.txt
+```
 
 ---
 
